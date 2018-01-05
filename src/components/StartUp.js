@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-export default class StartUp extends Component {
+import SearchBar from './SearchBar';
+
+class StartUp extends Component {
+  constructor(props){
+    super(props)(
+
+    )
+  }
+
   render() {
     return (
-      <div>redo of tutorial </div>
+      <div>
+        <SearchBar />
+      </div>
     );
   }
 }
+
+export default StartUp
