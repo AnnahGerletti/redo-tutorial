@@ -8,7 +8,7 @@ class SearchBar extends Component {
     return(
       <div className = "searchBar">
         <form>
-          <input placeholder= 'what are you looking for?' />
+          <input name= 'search bar' placeholder= 'what are you looking for?' />
         </form>
       </div>
     )

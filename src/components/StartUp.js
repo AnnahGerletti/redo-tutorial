@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import SearchBar from './SearchBar';
+import VideoPlayer from './VideoPlayer'
 
 class StartUp extends Component {
   constructor(props){
@@ -12,6 +13,7 @@ class StartUp extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoPlayer />
       </div>
     );
   }
