@@ -5,9 +5,7 @@ import SearchBar from './SearchBar';
 
 class StartUp extends Component {
   constructor(props){
-    super(props)(
-
-    )
+    super(props)
   }
 
   render() {
