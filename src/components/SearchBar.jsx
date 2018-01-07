@@ -7,9 +7,13 @@ class SearchBar extends Component {
   render(){
     return(
       <div className = "searchBar">
-        <form>
-          <input name= 'search bar' placeholder= 'what are you looking for?' />
-        </form>
+        <div className="field">
+          <label className="label">Search Bar</label>
+          <div className="control">
+            <input className="input" type="text" placeholder="Text input" />
+          </div>
+          <p className="help">Enter a search topic</p>
+        </div>
       </div>
     )
   }
