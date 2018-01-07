@@ -1,4 +1,4 @@
-import react from 'React'
+import React from 'react'
 
 const VideoList = () => {
   return(
@@ -7,3 +7,5 @@ const VideoList = () => {
     </div>
   )
 }
+
+export default VideoList
