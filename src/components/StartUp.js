@@ -8,9 +8,15 @@ import VideoList from './VideoList'
 
 const API_key = "AIzaSyB3--fdiw09Mdkq5QMv23CpdTgP-gmPubY"
 
+
 class StartUp extends Component {
   constructor(props){
     super(props)
+    this.state = {videos:[]}
+    
+    YTsearch({key:API_key, term:"snow"},(YTvideos) =>{
+      this.setState({videos:YTvideos})
+    })
   }
 
   render() {
