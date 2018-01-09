@@ -3,7 +3,11 @@ import React from 'react'
 const VideoList = () => {
   return(
     <div className = "videoList">
-      list of videos
+      <div className ="content">
+        <ul className = "column">
+          
+        </ul>
+      </div>
     </div>
   )
 }
