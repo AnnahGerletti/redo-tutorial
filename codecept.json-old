@@ -1,12 +1,10 @@
 {
-  "tests": "test/**/*_test.js",
+  "tests": "./*_test.js",
   "timeout": 10000,
   "output": "./output",
   "helpers": {
     "Nightmare": {
-      "url": "",
-      "show": false,
-      "restart": false
+      "url": "http://localhost:8080/webpack-dev-server/"
     }
   },
   "include": {
