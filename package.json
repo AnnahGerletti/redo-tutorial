@@ -6,8 +6,10 @@
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test-mocha": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "codeceptjs": "./node_modules/.bin/codeceptjs",
+    "test:watch": "npm run test -- --watch",
+    "test": "codeceptjs run --steps"
   },
   "author": "",
   "license": "ISC",
@@ -18,18 +20,16 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
-    "codeceptjs": "^1.1.1",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
-    "nightmare": "^2.10.0",
-    "nightmare-upload": "^0.1.1",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "codeceptjs-nightmare": "^1.1.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
