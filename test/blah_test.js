@@ -1,6 +1,6 @@
 
-Feature('no');
+Feature('Check HP title');
 
-Scenario('test something', (I) => {
+Scenario('can you see the title on hp', (I) => {
 
 });
