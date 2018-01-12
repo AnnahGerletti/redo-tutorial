@@ -5,7 +5,7 @@
   "helpers": {
     "Nightmare": {
       "url": "http://localhost",
-      "show": false,
+      "show": true,
       "restart": false
     }
   },
