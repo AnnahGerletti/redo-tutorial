@@ -13,9 +13,10 @@ class StartUp extends Component {
   constructor(props){
     super(props)
     this.state = {videos:[]}
-    
+
     YTsearch({key:API_key, term:"snow"},(YTvideos) =>{
       this.setState({videos:YTvideos})
+      console.log("here", YTvideos)
     })
   }
 
@@ -24,7 +25,7 @@ class StartUp extends Component {
       <div>
         <SearchBar />
         <VideoPlayer />
-        <VideoList />
+        <VideoList videos={this.state.videos} />
       </div>
     );
   }

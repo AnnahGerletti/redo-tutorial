@@ -6,11 +6,13 @@ class SearchBar extends Component {
     this.state = {term:""}
 
     this.onInputChange= this.onInputChange.bind(this)
+
   }
 
 
   onInputChange(event) {
     this.setState({term:event.target.value});
+
   }
 
   render(){
@@ -19,7 +21,10 @@ class SearchBar extends Component {
         <div className="field">
           <label className="label">Search Bar</label>
           <div className="control">
-            <input className="video-input" type="text" placeholder="Text input" value={this.state.term} onChange={this.onInputChange}/>
+
+            <input
+              value={this.state.term}
+              className="input" type="text" placeholder="Text input" value={this.state.term} onChange={this.onInputChange}/>
           </div>
           <p className="help">Enter a search topic</p>
         </div>
@@ -28,3 +33,9 @@ class SearchBar extends Component {
   }
 }
 export default SearchBar
+
+
+
+{/* <div class="control">
+  <input class="input" type="text" placeholder="Text input">
+</div> */}
