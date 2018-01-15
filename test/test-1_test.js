@@ -1,5 +1,5 @@
 var assert = require('assert')
-const globals = require('../global.js')
+const globals = require('../globals.json')
 
 Feature('title')
 
