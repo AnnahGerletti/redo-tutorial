@@ -1,22 +1,17 @@
+var assert = require('assert')
+const globals = require('../global.js')
 
-Feature('title');
+Feature('title')
 
 Scenario('Can user see page title', function * (I) {
-  I.amOnPage('http://localhost:8080/')
-  let title =  yield I.grabTitle('.tilte')
-  I.seeInTitle("Video Player")
-});
+  I.amOnPage(globals.pageUrl)
+  // let title =  yield I.grabTitle('.title')
+  let title = yield I.grabTitle()
+  // I.seeInTitle("Video Player")
+  assert.equal(title, 'React Redux')
+})
 
-
-
-// let title = yield I.grabTitle()
-
-
-// Scenario('see lat value', function * (I) {
-//   I.click('MORE INFO')
-//   I.wait(0.3)
-//   I.waitForVisible('.pic')
-//   let lat = yield I.grabTextFrom('#lat')
-//   let latNo = lat.split(' ')[1]
-//   I.see('Lat: ' + latNo)
-// })
+Scenario('Can see the page header', (I) => {
+  I.amOnPage(globals.pageUrl)
+  I.see('Video Player')
+})

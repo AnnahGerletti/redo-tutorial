@@ -6,28 +6,31 @@ import SearchBar from './SearchBar'
 import VideoPlayer from './VideoPlayer'
 import VideoList from './VideoList'
 
-const API_key = "AIzaSyB3--fdiw09Mdkq5QMv23CpdTgP-gmPubY"
-
+const API_key = 'AIzaSyB3--fdiw09Mdkq5QMv23CpdTgP-gmPubY'
 
 class StartUp extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
-    this.state = {videos:[]}
+    this.state = {videos: []}
 
-    YTsearch({key:API_key, term:"snow"},(YTvideos) =>{
-      this.setState({videos:YTvideos})
-      console.log("here", YTvideos)
+    YTsearch({key: API_key, term: 'snow'}, (YTvideos) => {
+      this.setState({videos: YTvideos})
+      console.log('here', YTvideos)
     })
   }
 
-  render() {
+  render () {
     return (
-      <div>
-        <SearchBar />
-        <VideoPlayer />
-        <VideoList videos={this.state.videos} />
+      <div className="columns">
+        <div className="column">
+          <SearchBar />
+          <VideoPlayer />
+        </div>
+        <div className="column">
+          <VideoList videos={this.state.videos} />
+        </div>
       </div>
-    );
+    )
   }
 }
 
