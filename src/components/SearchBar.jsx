@@ -1,22 +1,20 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class SearchBar extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
-    this.state = {term:""}
+    this.state = {term: ''}
 
-    this.onInputChange= this.onInputChange.bind(this)
+    this.onInputChange = this.onInputChange.bind(this)
+  }
+
+  onInputChange (event) {
+    this.setState({term: event.target.value})
 
   }
 
-
-  onInputChange(event) {
-    this.setState({term:event.target.value});
-
-  }
-
-  render(){
-    return(
+  render () {
+    return (
       <div className = "searchBar">
         <div className="field">
           <label className="label">Search Bar</label>
@@ -34,8 +32,6 @@ class SearchBar extends Component {
 }
 export default SearchBar
 
-
-
-{/* <div class="control">
+{ /* <div class="control">
   <input class="input" type="text" placeholder="Text input">
-</div> */}
+</div> */ }
