@@ -1,25 +1,28 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class SearchBar extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
-    this.state = {term:""}
+    this.state = {term: ''}
 
-    this.onInputChange= this.onInputChange.bind(this)
+    this.onInputChange = this.onInputChange.bind(this)
   }
 
+  onInputChange (event) {
+    this.setState({term: event.target.value})
 
-  onInputChange(event) {
-    this.setState({term:event.target.value});
   }
 
-  render(){
-    return(
+  render () {
+    return (
       <div className = "searchBar">
         <div className="field">
           <label className="label">Search Bar</label>
           <div className="control">
-            <input className="video-input" type="text" placeholder="Text input" value={this.state.term} onChange={this.onInputChange}/>
+
+            <input
+              value={this.state.term}
+              className="input" type="text" placeholder="Text input" value={this.state.term} onChange={this.onInputChange}/>
           </div>
           <p className="help">Enter a search topic</p>
         </div>
@@ -28,3 +31,7 @@ class SearchBar extends Component {
   }
 }
 export default SearchBar
+
+{ /* <div class="control">
+  <input class="input" type="text" placeholder="Text input">
+</div> */ }

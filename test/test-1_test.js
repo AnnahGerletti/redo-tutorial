@@ -1,11 +1,20 @@
+var assert = require('assert')
+const globals = require('../globals.json')
 
-Feature('title');
+Feature('title')
 
-*Scenario('Can user see page title', (I) => {
-  let title =  yield I.grabTitle()
-  I.amOnPage('http://localhost:8080/')
-  I.seeInTitle()
-});
+Scenario('Can user see page title', function * (I) {
+  I.amOnPage(globals.pageUrl)
+  let title = yield I.grabTitle()
+  // I.seeInTitle("Video Player") wrong title
+  assert.equal(title, 'React Redux')
+})
 
+Scenario('Can see the page header', (I) => {
+  I.amOnPage(globals.pageUrl)
+  I.see('Video Player')
+})
 
-// let title = yield I.grabTitle()
+Scenario('can see two columns', (I) => {
+  
+})
