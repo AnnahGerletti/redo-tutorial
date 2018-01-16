@@ -1,8 +1,8 @@
-
+const globals = require('../globals.json')
 Feature('Front Page')
 
 Scenario('test something', (I) => {
-  I.amOnPage('http://localhost:8080')
+  I.amOnPage(globals.pageUrl)
   // I.fillField('textBox', 'cat')
 })
 
