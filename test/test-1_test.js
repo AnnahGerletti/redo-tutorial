@@ -15,6 +15,7 @@ Scenario('Can see the page header', (I) => {
   I.see('Video Player')
 })
 
-Scenario('can see two columns', (I) => {
-  
+Scenario('can see columns', (I) => {
+  I.amOnPage(globals.pageUrl)
+  I.seeElement('.label')
 })

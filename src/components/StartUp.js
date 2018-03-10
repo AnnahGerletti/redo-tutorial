@@ -26,7 +26,7 @@ class StartUp extends Component {
           <SearchBar />
           <VideoPlayer />
         </div>
-        <div className="column">
+        <div className="column videoList">
           <VideoList videos={this.state.videos} />
         </div>
       </div>

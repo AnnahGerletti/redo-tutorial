@@ -1,15 +1,12 @@
 import React from 'react'
 
-const VideoList = () => {
+const VideoList = (props) => {
   return (
-    <div className = "media columns videoList">
-      <div className ="media-right content">
-        < label className = "label" >Video List </label>
-        <ul className = "column is-half">
-          <li>here</li>
-
-        </ul>
-      </div>
+    <div>
+      <label className = "label" >Video List </label>
+      <ul>
+        <li>here</li>
+      </ul>
     </div>
   )
 }
