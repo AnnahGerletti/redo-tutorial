@@ -1,4 +1,4 @@
-# ReduxSimpleStarter Tuturial from Udemy
+# ReduxSimpleStarter Tutorial from Udemy
 #### Tutorial by StephenGrider
 
 Link to the Udemy tutorials (https://www.udemy.com/react-redux/)?
