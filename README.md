@@ -1,14 +1,13 @@
 # ReduxSimpleStarter Tuturial from Udemy
 #### Tutorial by StephenGrider
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+Link to the Udemy tutorials (https://www.udemy.com/react-redux/)?
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+There are two steps for getting started. 
+- you need to clone down the repo
+- install and start server
 
 ```
 > git clone https://github.com/AnnahGerletti/redo-tutorial.git
@@ -17,13 +16,6 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > npm start - there is a server and want to use localhost:8080
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
 # codecept Testing framework added to tutorial
 #### Documentation is good - can be confussing  
 
