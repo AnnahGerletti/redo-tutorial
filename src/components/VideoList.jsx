@@ -1,12 +1,11 @@
 import React from 'react'
 
-const VideoList = () => {
+const VideoList = (props) => {
   return (
     <div>
-      < label className = "label" >Video List </label>
+      <label className = "label" >Video List </label>
       <ul>
         <li>here</li>
-
       </ul>
     </div>
   )
